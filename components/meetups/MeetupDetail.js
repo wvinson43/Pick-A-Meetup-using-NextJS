@@ -1,3 +1,4 @@
+import NewMeetupFrom from './NewMeetupForm';
 import classes from './MeetupDetail.module.css';
 
 const MeetupDetail = (props) => {
@@ -7,6 +8,9 @@ const MeetupDetail = (props) => {
       <h1>{props.title}</h1>
       <address>{props.address}</address>
       <p>{props.description}</p>
+      <div className={classes.actions}>
+        <button>Delete Meetup</button>
+      </div>
     </section>
   );
 };

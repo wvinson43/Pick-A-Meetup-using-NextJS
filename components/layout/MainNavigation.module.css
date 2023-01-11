@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,4 +36,17 @@
 .header a:active,
 .header a.active {
   color: purple;
+}
+
+@media (max-width: 626px) {
+  .header {
+    padding: 5% 5%;
+    height: 10rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .header a {
+    font-size: 0.7rem;
+  }
 }
